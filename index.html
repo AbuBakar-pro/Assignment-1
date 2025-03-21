@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Recipies</title>
+</head>
+<body>
+    <style>
+        /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff; /* White Background */
+    color: #333; /* Dark text for readability */
+}
+
+/* Headings */
+h2 {
+    color: #ff6600; /* Orange color */
+    border-bottom: 2px solid #ff6600;
+    padding-bottom: 5px;
+}
+
+/* Recipe Image */
+img {
+    display: block;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+/* Ingredients & Steps */
+ul, ol {
+    background: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+ul li, ol li {
+    margin-bottom: 5px;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background: #fff;
+}
+
+th, td {
+    border: 1px solid #ff6600; /* Orange border */
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background: #ff6600;
+    color: white;
+}
+
+/* Form */
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    border: 2px solid #ff6600;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #ff6600;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ff6600;
+    border-radius: 5px;
+    background: #fff;
+    color: #333;
+}
+
+/* Button */
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background: #ff6600;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #e65c00;
+}
+
+    </style>
+    <h2>Delicious Recipies</h2>
+    <p><b>Recipe Of The Day: Spaghetti</b></p>
+    <img src="https://www.opskrifter.dk/images/recipes/0XkmqwPM6gBf0zKw0vgSGyhSKgky2DQSiSmvwyxN.jpeg" alt="Spaghetti"
+    height="123">
+    <h2>Ingredients</h2>
+    <ul>
+        <li>200g Spaghetti</li>
+        <li>100g pancetta</li>
+        <li>2 large eggs</li>   
+        <li>50g pecorno cheese</li>
+        <li>Black pepper</li>
+        <li>Salt</li>
+    </ul>
+    <h2>Steps to Prepare</h2>
+    <ol>
+        <li>Boil the spaghetti in salted water until al dente. </li>
+        <li>Fry the pancetta until crispy.</li>
+        <li>Beat the eggs and mix with greated cheeses.</li>
+        <li>Drain the spaghetti and mix the mixture.</li>
+        <li>Remove from heat and stir the mixture.</li>
+        <li>Season with black pepper and serve imedeiatly.</li>
+    </ol>
+    <h2>Nutritional Information</h2>
+    <table>
+        <!-- Head of the table -->
+         <thead>
+            <tr>
+                <th>Nutrient</th>
+                <th>Amount Per Serving</th>
+            </tr>
+         </thead>
+         <!-- Body of the table -->
+          <tbody>
+            <tr>
+                <td>Calories</td>
+                <td>500</td>
+            </tr>
+            <tr>
+                <td>Protien</td>
+                <td>25g</td>
+            </tr>
+            <tr>
+                <td>Carbohydrates</td>
+                <td>55g</td>
+            </tr>
+            <tr>
+                <td>Fat</td>
+                <td>20g</td>
+            </tr>
+          </tbody>
+    </table>
+    <h2>Cooking Tutorial Video</h2>
+    <iframe width="1200" height="215" src="https://www.youtube.com/embed/jBoMTZIHqLc?si=m-O7_O-02_dOpaFN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h2>Submit Your Recipe</h2>
+    <!-- Form start here -->
+     <form action="submit.php">
+        <!-- Text input for name -->
+         <div>
+            <label for="name">Name</label>
+            <input id="name"type="text"placeholder="Enter Name"required>
+         </div>
+         <!-- Email input -->
+          <div>
+            <label for="email">Email</label>
+            <input id="email"type="email"placeholder="Enter Email"required>
+          </div>
+          <!-- Textarea for comments -->
+          <div>
+            <label for="comments">Your Recipe</label>
+            <textarea id="comments"placeholder="Your recipe"rows="4"></textarea>
+         </div>
+         <div>
+            <button type="submit">Submit</button>
+         </div>
+     </form>
+</body>
+</html>
